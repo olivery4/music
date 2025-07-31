@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <img src="https://olivery4.github.io/files/Felix-Feng.png"id="feliximg" alt="felix" width="460" height="345" onclick="document.getElementById('cherry').style.display='block';">
+    <img src="https://olivery4.github.io/files/Felix-Feng.png"id="feliximg" alt="felix" width="460" height="345" onclick="document.querySelectorAll('.hidden').forEach(ele => {ele.style.display = 'block'});">
     
     <div>
          <p>Absolute zero:</p>
@@ -28,9 +28,14 @@
         <audio controls src="https://olivery4.github.io/files/Last_Dance_Eve.mp3" loop=true></audio>
     </div>
 
-    <div id="cherry" style="display:none">
+    <div class="hidden" style="display:none">
         <p>Cherry Pop:</p>
         <audio controls src="https://olivery4.github.io/files/cherry_pop.mp3" loop=true></audio>
+    </div>
+
+    <div class="hidden" style="display:none">
+        <p>Machine Love</p>
+        <audio controls src="https://olivery4.github.io/files/machine_love.mp3" loop=true></audio>
     </div>
 </body>
 </html>
